@@ -1,0 +1,17 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orangeBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb703"/>
+      <stop offset="100%" stop-color="#fb8500"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="124" height="124" rx="24" fill="#004f7a"/>
+  <rect x="14" y="14" width="112" height="112" rx="20" fill="#008fbd"/>
+  <g transform="translate(24 22)">
+    <circle cx="46" cy="46" r="32" fill="url(#orangeBody)"/>
+    <circle cx="40" cy="36" r="12" fill="rgba(255,255,255,0.35)"/>
+    <path d="M46 13c5 0 9-2 11-6 4 0 7 2 9 4-3 6-9 10-17 10-3 0-6-.5-8-1 1-4 3-7 5-7z" fill="#2f9e44"/>
+    <circle cx="46" cy="46" r="28" fill="none" stroke="#ffd27f" stroke-width="3" stroke-dasharray="4 6"/>
+  </g>
+</svg>
+

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@utility shadow-glow-gold {
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.8), 0 0 30px rgba(250, 204, 21, 0.6);
+}
+
+body {
+  @apply antialiased;
+}
+
+.fruit-border {
+  @apply rounded-xl border-4 border-yellow-300 shadow-glow-gold;
+}
+
+.fruit-tile {
+  @apply flex items-center justify-center rounded-lg bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 shadow-md;
+}
+
+.fruit-tile-light {
+  @apply absolute inset-0 rounded-lg border-2 border-yellow-300/40 shadow-glow-gold opacity-0 transition-opacity;
+}
+
+.fruit-tile-light-on {
+  @apply opacity-100;
+}

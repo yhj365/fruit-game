@@ -1,0 +1,20 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sevenBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff4b4b"/>
+      <stop offset="100%" stop-color="#c1121f"/>
+    </linearGradient>
+    <linearGradient id="sevenStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#f77f00"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="124" height="124" rx="24" fill="#004f7a"/>
+  <rect x="14" y="14" width="112" height="112" rx="20" fill="url(#sevenBg)"/>
+  <g transform="translate(18 26)" fill="#fff" stroke="url(#sevenStroke)" stroke-width="4" stroke-linejoin="round">
+    <!-- 第一個 7 -->
+    <path d="M10 8h40c1.5 0 2.5 1.4 1.9 2.8L36 44h12c1.3 0 2.3 1.2 2 2.5l-3 12c-.2.9-1 1.5-2 1.5H16c-1.5 0-2.5-1.4-2-2.8L28 22H10c-1.1 0-2-0.9-2-2v-8c0-1.1.9-2 2-2z"/>
+    <!-- 第二個 7 -->
+    <path d="M52 8h40c1.5 0 2.5 1.4 1.9 2.8L78 44h12c1.3 0 2.3 1.2 2 2.5l-3 12c-.2.9-1 1.5-2 1.5H58c-1.5 0-2.5-1.4-2-2.8L70 22H52c-1.1 0-2-0.9-2-2v-8c0-1.1.9-2 2-2z"/>
+  </g>
+</svg>

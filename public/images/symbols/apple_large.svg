@@ -1,0 +1,23 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="appleRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#d62828"/>
+    </linearGradient>
+    <linearGradient id="appleHighlight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.9)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="124" height="124" rx="24" fill="#004f7a"/>
+  <rect x="14" y="14" width="112" height="112" rx="20" fill="#008fbd"/>
+  <g transform="translate(20 18)">
+    <path d="M52 10c4.5-6 9-9 14-9 2.5 0 4.5.4 6 .9-1.8 5.2-6.6 9.1-14.3 9.8-2.5.2-4.5-.1-5.7-.4z" fill="#3b3b3b"/>
+    <path d="M52 18c-16 0-30 11.5-30 29 0 19 12 35 30 35s30-16 30-35C82 29.5 68 18 52 18z" fill="url(#appleRed)"/>
+    <path d="M40 24c-6 2-11 7-13 13-1 2.5-.6 4.5.4 6 6-5 12-8 19-9 4-.7 7.7-.8 11.5-.6-4.5-5-11-7-18-9z" fill="#ff8787"/>
+    <path d="M63 6c3-4 7-6 11-6 1.7 0 3 .3 4 .6-1.2 3.6-4.8 6.3-10.4 6.8-1.7.1-3-.1-3.9-.3z" fill="#2f7d32"/>
+    <path d="M68 5c1.5-3 4-5 7-5 .9 0 1.6.1 2.3.3-.8 2.4-3 4.3-6.4 4.7-1 .1-1.8 0-2.4 0z" fill="#66bb6a"/>
+    <ellipse cx="42" cy="34" rx="10" ry="7" fill="url(#appleHighlight)" opacity="0.8"/>
+  </g>
+</svg>
+

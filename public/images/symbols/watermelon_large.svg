@@ -1,0 +1,25 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wmGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7ed957"/>
+      <stop offset="100%" stop-color="#2f9e44"/>
+    </linearGradient>
+    <linearGradient id="wmRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#d6336c"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="124" height="124" rx="24" fill="#004f7a"/>
+  <rect x="14" y="14" width="112" height="112" rx="20" fill="#008fbd"/>
+  <g transform="translate(20 24)">
+    <path d="M20 68c0-22 14-40 34-40s34 18 34 40H20z" fill="url(#wmGreen)"/>
+    <path d="M24 64c0-18 12-32 30-32s30 14 30 32H24z" fill="#14532d"/>
+    <path d="M26 62c0-16 11-28 28-28s28 12 28 28H26z" fill="url(#wmRed)"/>
+    <circle cx="44" cy="50" r="2" fill="#1f2933"/>
+    <circle cx="54" cy="44" r="2" fill="#1f2933"/>
+    <circle cx="64" cy="50" r="2" fill="#1f2933"/>
+    <circle cx="52" cy="54" r="2" fill="#1f2933"/>
+    <circle cx="60" cy="58" r="2" fill="#1f2933"/>
+  </g>
+</svg>
+
