@@ -10,4 +10,10 @@ const client = postgres(connectionString, {
 });
 
 export const db = drizzle(client);
+
+/** Verifies that the configured PostgreSQL server can execute a query. */
+export async function verifyDatabaseConnection(): Promise<void> {
+  await client`select 1`;
+}
+
 export * from "./schema";

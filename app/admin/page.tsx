@@ -17,14 +17,14 @@ export default async function AdminPage() {
 
   return (
     <div className="flex w-full flex-col gap-6">
-      <h2 className="text-2xl font-bold text-fruit-gold">用户管理后台</h2>
-      <p className="text-sm text-slate-300">
-        默认管理员账号：<span className="font-mono font-semibold">admin</span>{" "}
-        / <span className="font-mono font-semibold">123456</span>
-      </p>
-      <div className="overflow-x-auto rounded-xl border border-slate-700 bg-slate-900/70">
+      <div>
+        <p className="text-sm font-semibold text-sky-600">账户概览</p>
+        <h2 className="mt-1 text-3xl font-bold tracking-tight text-sky-ink">用户管理</h2>
+        <p className="mt-2 text-sm text-sky-800">查看已注册用户的角色、积分与创建时间。</p>
+      </div>
+      <div className="overflow-x-auto rounded-3xl border border-sky-100 bg-white/90 shadow-aqua">
         <table className="min-w-full text-left text-sm">
-          <thead className="border-b border-slate-700 bg-slate-900/90 text-xs uppercase text-slate-400">
+          <thead className="border-b border-sky-100 bg-sky-50 text-xs font-semibold text-sky-700">
             <tr>
               <th className="px-4 py-2">ID</th>
               <th className="px-4 py-2">用户名</th>
@@ -37,29 +37,29 @@ export default async function AdminPage() {
             {allUsers.map((user) => (
               <tr
                 key={user.id}
-                className="border-b border-slate-800/60 hover:bg-slate-800/60"
+                className="border-b border-sky-50 transition hover:bg-sky-50/70"
               >
-                <td className="px-4 py-2 text-xs text-slate-300">
+                <td className="px-4 py-3 text-xs text-sky-600">
                   {user.id}
                 </td>
-                <td className="px-4 py-2 text-sm font-medium text-slate-50">
+                <td className="px-4 py-3 text-sm font-semibold text-sky-950">
                   {user.username}
                 </td>
                 <td className="px-4 py-2 text-xs">
                   {user.isAdmin ? (
-                    <span className="rounded bg-emerald-500/20 px-2 py-0.5 text-emerald-300">
+                    <span className="rounded-full bg-sky-100 px-2 py-1 text-sky-700">
                       管理员
                     </span>
                   ) : (
-                    <span className="rounded bg-slate-600/40 px-2 py-0.5 text-slate-200">
+                    <span className="rounded-full bg-slate-100 px-2 py-1 text-slate-600">
                       普通用户
                     </span>
                   )}
                 </td>
-                <td className="px-4 py-2 text-sm text-fruit-gold">
+                <td className="px-4 py-3 text-sm font-bold text-sky-700">
                   {user.credits}
                 </td>
-                <td className="px-4 py-2 text-xs text-slate-400">
+                <td className="px-4 py-3 text-xs text-sky-600">
                   {user.createdAt?.toLocaleString?.("zh-CN") ?? "-"}
                 </td>
               </tr>

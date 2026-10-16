@@ -38,28 +38,27 @@ export default function RegisterPage() {
     <div className="flex w-full flex-col items-center justify-center">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-md rounded-2xl bg-slate-900/80 p-8 shadow-2xl shadow-black/60"
+        className="w-full max-w-md rounded-3xl border border-sky-100 bg-white/90 p-6 shadow-aqua sm:p-8"
       >
-        <h2 className="mb-4 text-center text-2xl font-bold text-fruit-gold">
-          注册账号
-        </h2>
-        <p className="mb-6 text-center text-xs text-slate-300">
-          注册成功即送 <span className="font-semibold">100 积分</span>
+        <p className="mb-2 text-sm font-semibold text-sky-600">新玩家福利</p>
+        <h2 className="text-3xl font-bold tracking-tight text-sky-ink">注册账号</h2>
+        <p className="mb-6 mt-3 text-sm text-sky-800">
+          注册成功即送 <span className="font-bold text-sky-600">100 积分</span>
         </p>
         <div className="mb-4">
-          <label className="mb-1 block text-xs text-slate-300">用户名</label>
+          <label className="mb-1.5 block text-sm font-medium text-sky-900">用户名</label>
           <input
-            className="w-full rounded-md border border-slate-600 bg-slate-800 px-3 py-2 text-sm outline-none focus:border-fruit-gold"
+            className="w-full rounded-xl border border-sky-200 bg-sky-50/70 px-3 py-2.5 text-sm text-sky-950 outline-none transition focus:border-sky-500 focus:bg-white focus:ring-4 focus:ring-sky-100"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
         </div>
         <div className="mb-4">
-          <label className="mb-1 block text-xs text-slate-300">密码</label>
+          <label className="mb-1.5 block text-sm font-medium text-sky-900">密码</label>
           <input
             type="password"
-            className="w-full rounded-md border border-slate-600 bg-slate-800 px-3 py-2 text-sm outline-none focus:border-fruit-gold"
+            className="w-full rounded-xl border border-sky-200 bg-sky-50/70 px-3 py-2.5 text-sm text-sky-950 outline-none transition focus:border-sky-500 focus:bg-white focus:ring-4 focus:ring-sky-100"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -67,14 +66,14 @@ export default function RegisterPage() {
           />
         </div>
         {error && (
-          <p className="mb-3 text-xs text-red-400" role="alert">
+          <p className="mb-3 rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700" role="alert">
             {error}
           </p>
         )}
         <button
           type="submit"
           disabled={loading}
-          className="mt-2 w-full rounded-lg bg-fruit-gold py-2 text-sm font-semibold text-slate-950 shadow-glow-gold transition hover:translate-y-0.5 hover:bg-yellow-300 disabled:opacity-70"
+          className="mt-2 w-full rounded-xl bg-sky-600 py-3 text-sm font-bold text-white shadow-aqua transition hover:-translate-y-0.5 hover:bg-sky-700 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {loading ? "注册中..." : "注册并进入游戏"}
         </button>

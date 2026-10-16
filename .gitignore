@@ -19,6 +19,10 @@
 
 # production
 /build
+/backup/
+/.planning/
+/.playwright-cli/
+/output/
 
 # misc
 .DS_Store
